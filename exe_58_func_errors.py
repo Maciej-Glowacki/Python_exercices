@@ -1,9 +1,15 @@
-# Napisz funkcję div, która:
+def div(a = 0, b = 0):
+    try:
+        a = int(input("Write first number: "))
+        b = int(input("Write second number: "))
+    except ValueError as val:
+        print("Values you've wrote are not numbers!", val)
+        return None
+    try:
+        result = a / b
+        print(round(result, 2))
+        return result
+    except ZeroDivisionError as zeroerr:
+        print("Division by 0!", zeroerr)
 
-# poprosi użytkownika o podanie 2 liczb z klawiatury,
-# wprowadzone dane zamieni na liczby naturalne,
-# podzieli jedną liczbę przez drugą,
-# wyświetli wynik.
-# Dodatkowo należy zabezpieczyć się przed wszystkimi możliwymi błędami (niewłaściwe dane, dzielenie przez zero).
-
-# Sprawdź w interaktywnej konsoli Pythona, jakie błędy mogą wystąpić i zabezpiecz się przed nimi.
+div()
