@@ -21,9 +21,9 @@ class Calculator:
 
 myCalc = Calculator()
 
-myCalc.add(2, 3)
-myCalc.add(12, 3)
-myCalc.add(22, 3)
-myCalc.add(32, 3)
+# myCalc.add(2, 3)
+# myCalc.add(12, 3)
+# myCalc.add(22, 3)
+# myCalc.add(32, 3)
 myCalc.multiply(23, 2)
 myCalc.print_operations()
