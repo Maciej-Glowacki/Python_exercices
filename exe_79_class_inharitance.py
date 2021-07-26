@@ -1,13 +1,3 @@
-# Zajrzyj do pliku exercise_1.py, znajdziesz tam klasę Dinosaur, która ma zaimplementowane następujące elementy:
-
-# metodę walk(),
-# metodę make_sound().
-# Napisz klasę Bird, która będzie dziedziczyła po klasie Dinosaur. Klasa Bird ma:
-
-# dostać nową metodę fly(), która będzie zwracała napis "Latam!",
-# nadpisać metodę make_sound(), która ma zwracać napis "Ćwir ćwir!".
-# Przetestuj nową klasę.
-
 class Dinosaur:
     
     def walk(self):
