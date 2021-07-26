@@ -16,7 +16,7 @@ class Employee:
         return f'Employee {self.first_name} {self.last_name} earns {self._salary} złotych'
 
 
-e = Employee(1, 'Maciek', 'Głowacki')
+# e = Employee(1, 'Maciek', 'Głowacki')
 
-e.set_salary(15000)
-print(e)
+# e.set_salary(15000)
+# print(e)
