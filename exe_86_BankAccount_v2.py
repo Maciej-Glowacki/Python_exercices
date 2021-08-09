@@ -1,7 +1,9 @@
 class BankAccount:
-    def __init__(self, number):
-        self.number = number
+    NEXT_ACC_NUMBER = 1
+
+    def __init__(self):
         self.cash = 0.0
+        BankAccount.NEXT_ACC_NUMBER += 1
 
 
     def deposit_cash(self, amount):
@@ -19,12 +21,18 @@ class BankAccount:
     def __str__(self):
         return f'Account: {self.number}, balance: {self.cash}'
 
-myaccount = BankAccount(1496454578)
-print(myaccount)
-myaccount.deposit_cash(429)
-print(myaccount)
-myaccount.deposit_cash(156)
-print(myaccount)
-myaccount.withdraw_cash(1000)
-print(myaccount)
+print(BankAccount.NEXT_ACC_NUMBER)
+myAccount = BankAccount()
+print(BankAccount.NEXT_ACC_NUMBER)
+myAccount2 = BankAccount()
+print(BankAccount.NEXT_ACC_NUMBER)
 
+
+# myaccount = BankAccount(1496454578)
+# print(myaccount)
+# myaccount.deposit_cash(429)
+# print(myaccount)
+# myaccount.deposit_cash(156)
+# print(myaccount)
+# myaccount.withdraw_cash(1000)
+# print(myaccount)
